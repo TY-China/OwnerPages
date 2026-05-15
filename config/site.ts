@@ -104,7 +104,7 @@ export const siteConfig: SiteConfig = {
     {
       key: "twitter",
       name: "Twitter / X",
-      handle: "None,
+      handle: "None",
       href: "None",
       hoverColor: "hover:border-[#1DA1F2]/40 hover:text-[#1DA1F2]",
     },
@@ -112,7 +112,7 @@ export const siteConfig: SiteConfig = {
       key: "bilibili",
       name: "Bilibili",
       handle: "None",
-      href: "None,
+      href: "None",
       hoverColor: "hover:border-[#00A1D6]/40 hover:text-[#00A1D6]",
     },
     {
