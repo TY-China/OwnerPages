@@ -104,15 +104,15 @@ export const siteConfig: SiteConfig = {
     {
       key: "twitter",
       name: "Twitter / X",
-      handle: "@Moemuii",
-      href: "https://x.com/Moemuii",
+      handle: "None,
+      href: "None",
       hoverColor: "hover:border-[#1DA1F2]/40 hover:text-[#1DA1F2]",
     },
     {
       key: "bilibili",
       name: "Bilibili",
-      handle: "@Moemuu",
-      href: "https://space.bilibili.com/97020216/",
+      handle: "None",
+      href: "None,
       hoverColor: "hover:border-[#00A1D6]/40 hover:text-[#00A1D6]",
     },
     {
