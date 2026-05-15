@@ -1,11 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',  // 启用静态导出
+  output: 'export',
   images: {
-    unoptimized: true,  // GitHub Pages 不支持 Next.js 图片优化
+    unoptimized: true,
   },
-  basePath: '/OwnerPages',  // 替换成你的仓库名
-  assetPrefix: '/OwnerPages',  // 替换成你的仓库名
+  basePath: '/OwnerPages',
+  assetPrefix: '/OwnerPages',
 }
 
 export default nextConfig
