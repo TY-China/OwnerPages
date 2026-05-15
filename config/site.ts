@@ -1,109 +1,104 @@
 export type NavLink = {
-  label: string
-  href: string
+  label: string          // 标签
+  href: string           // 链接
 }
 
 export type SocialLink = {
-  key: string
-  name: string
-  handle: string
-  href: string
-  hoverColor: string
+  key: string            // 键名
+  name: string           // 名称
+  handle: string         // 用户名
+  href: string           // 链接
+  hoverColor: string     // 悬停颜色
 }
 
 export type Interest = {
-  icon: string
-  title: string
-  description: string
+  icon: string           // 图标
+  title: string          // 标题
+  description: string    // 描述
 }
 
 export type Skill = {
-  name: string
-  level: number
+  name: string           // 技能名称
+  level: number          // 熟练度等级
 }
 
 export type SectionHeader = {
-  tag: string
-  title: string
+  tag: string            // 标签
+  title: string          // 标题
 }
 
 export type CtaLink = {
-  label: string
-  href: string
-  external?: boolean
+  label: string          // 按钮文字
+  href: string           // 链接
+  external?: boolean     // 是否外部链接
 }
 
 export type SiteConfig = {
-  name: string
-  title: string
-  description: string
-  role: string
-  tagline: string
-  bio: string
-  avatarUrl: string
-  heroImageUrl: string
-  heroImageAlt: string
+  name: string           // 站点名称
+  title: string          // 站点标题
+  description: string    // 站点描述
+  role: string           // 角色/身份
+  tagline: string        // 标语/签名
+  bio: string            // 个人简介
+  avatarUrl: string      // 头像链接
+  heroImageUrl: string   // 主页背景图链接
+  heroImageAlt: string   // 主页背景图描述
 
-  ctaLink?: CtaLink
+  ctaLink?: CtaLink      // 行动号召链接
 
   footer: {
-    quote: string
-    credit: string
+    quote: string        // 页脚引用语
+    credit: string       // 版权/致谢信息
   }
 
-  navLinks: NavLink[]
-
-  socialLinks: SocialLink[]
-
-  interests: Interest[]
-
-  skills: Skill[]
-
-  techStack: string[]
+  navLinks: NavLink[]            // 导航链接
+  socialLinks: SocialLink[]      // 社交链接
+  interests: Interest[]          // 兴趣爱好
+  skills: Skill[]                // 技能列表
+  techStack: string[]            // 技术栈
 
   sections: {
-    about: SectionHeader
-    skills: SectionHeader & { techStackLabel: string }
-    connect: SectionHeader
+    about: SectionHeader                         // "关于我" 板块
+    skills: SectionHeader & { techStackLabel: string }  // "技能" 板块
+    connect: SectionHeader                       // "联系" 板块
   }
 }
 
 export const siteConfig: SiteConfig = {
-  name: "Muika",
-  title: "Muika - An ACGN Enthusiast",
-  description:
-    "Personal homepage of Muika - A creative web developer with a passion for anime and clean design.",
-  role: "An ACGN enthusiast",
+  name: "BaiXuan",
+  title: "BaiXuan的个人主页",
+  description: "BaiXuan的个人主页",
+  role: "个人主页",
   tagline: "ACGN / INFJ-T / Depression / Python / CS.ML / NLP",
-  bio: "你好呀，这里是 Asahina Mafuyu(朝比奈真冬), 你也可以叫我 Muika，我学了一点编程语言，目前大二在读。我热衷于钻研和大语言模型有关的东西，希望通过自己的双手让自己的原创角色“活起来”，目前正在为 ACL Student Research Workshop 撰写论文。",
-  avatarUrl: "/images/Mafuyu.png",
+  bio: "你好呀！我是白轩（BaiXuan），很高兴你可以进入并浏览我的个人主页。",
+  avatarUrl: "http://q.qlogo.cn/headimg_dl?dst_uin=2182344375&spec=640&img_type=jpg",
   heroImageUrl: "/images/140981624_p0.webp",
-  heroImageAlt: "Anime-style illustration of a dreamy sky scene, Pixiv ID 140981624",
+  heroImageAlt: "二次元风格的梦幻天空场景插图，Pixiv ID 140981624",
 
   ctaLink: {
-    label: "Visit My Blog",
-    href: "https://blog.snowy.moe/",
+    label: "查看我的Blog",
+    href: "None",
     external: true,
   },
 
   footer: {
-    quote: '"单程孤舟，出云入霞，如歌如吟。"',
-    credit: "Made with love by Muika",
+    quote: "“单程孤舟，出云入霞，如歌如吟。”",
+    credit: "Made with love by BaiXuan",
   },
 
   navLinks: [
-    { label: "Home", href: "#" },
-    { label: "About", href: "#about" },
-    { label: "Skills", href: "#skills" },
-    { label: "Connect", href: "#connect" },
+    { label: "首页", href: "#" },
+    { label: "关于", href: "#about" },
+    { label: "技能", href: "#skills" },
+    { label: "联系", href: "#connect" },
   ],
 
   socialLinks: [
     {
       key: "github",
       name: "GitHub",
-      handle: "@Moemu",
-      href: "https://github.com/Moemu",
+      handle: "@TY-China",
+      href: "https://github.com/TY-China",
       hoverColor: "hover:border-[#333]/40 hover:text-[#333]",
     },
     {
@@ -122,9 +117,9 @@ export const siteConfig: SiteConfig = {
     },
     {
       key: "email",
-      name: "Email",
-      handle: "i@snowy.moe",
-      href: "mailto:i@snowy.moe",
+      name: "邮箱",
+      handle: "2182344375@qq.com",
+      href: "mailto:2182344375@qq.com",
       hoverColor: "hover:border-accent/40 hover:text-accent",
     },
   ],
@@ -132,27 +127,23 @@ export const siteConfig: SiteConfig = {
   interests: [
     {
       icon: "code",
-      title: "Development",
-      description:
-        "构建有趣和实在的应用，不断提升自己的编程技能和技术栈。",
+      title: "开发",
+      description: "构建有趣和实用的应用，不断提升自己的编程技能和技术栈。",
     },
     {
       icon: "palette",
-      title: "Natural Language Processing",
-      description:
-        "研究自然语言处理技术，探索 AI 与人类交互的新可能性。",
+      title: "自然语言处理",
+      description: "研究自然语言处理技术，探索 AI 与人类交互的新可能性。",
     },
     {
       icon: "sparkles",
-      title: "ACGN Culture",
-      description:
-        "闲暇时会追番和看漫画，喜欢轻日常&百合向作品。",
+      title: "ACGN 文化",
+      description: "闲暇时会追番和看漫画，喜欢轻日常和百合向作品。",
     },
     {
       icon: "music",
-      title: "Music",
-      description:
-        "Enjoying J-pop, lo-fi beats, and ambient soundscapes while coding.",
+      title: "音乐",
+      description: "编程时喜欢听 J-pop、lo-fi 节拍和环境氛围音乐。",
     },
   ],
 
@@ -181,17 +172,17 @@ export const siteConfig: SiteConfig = {
 
   sections: {
     about: {
-      tag: "About Me",
-      title: "A little bit about myself",
+      tag: "关于我",
+      title: "关于我自己的一些介绍",
     },
     skills: {
-      tag: "Skills",
-      title: "What I work with",
-      techStackLabel: "Tech Stack",
+      tag: "技能",
+      title: "我使用的工具与技术",
+      techStackLabel: "技术栈",
     },
     connect: {
-      tag: "Connect",
-      title: "Let's be friends",
+      tag: "联系",
+      title: "来交个朋友吧",
     },
   },
 }
