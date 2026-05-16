@@ -2,8 +2,12 @@
 
 基于 Next.js 16 + React 19 + Tailwind CSS + shadcn/ui 的二次元简约风格个人主页模板。
 
-## 功能特性
+[BaiXuansImage](./src/image.png)
 
+## 功能特性
+### 示例图
+[Demo](./src/demo.jpeg)
+### 主要
 - [X] 响应式单页布局
 
 - [X] 主题变量驱动样式，支持系统级深色模式（`prefers-color-scheme`）
