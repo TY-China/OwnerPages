@@ -148,12 +148,13 @@ export const siteConfig: SiteConfig = {
   ],
 
   skills: [
-    { name: "Python", level: 75 },
-    { name: "JavaScript", level: 60 },
-    { name: "Tailwind CSS", level: 60 },
-    { name: "Java", level: 40 },
-    { name: "MySQL", level: 40 },
-    { name: "LaTeX", level: 20 },
+    { name: "Python", level: 100 },
+    { name: "JavaScript", level: 90 },
+    { name: "Tailwind CSS", level: 50 },
+    { name: "Java", level: 30 },
+    { name: "MySQL", level: 10 },
+    { name: "LaTeX", level: 1 },
+    { name: "E for Chinese", level :99 },
   ],
 
   techStack: [
@@ -168,6 +169,7 @@ export const siteConfig: SiteConfig = {
     "Git",
     "LaTeX",
     "Docker",
+    "Linux",
   ],
 
   sections: {
