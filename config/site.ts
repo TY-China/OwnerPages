@@ -112,8 +112,8 @@ export const siteConfig: SiteConfig = {
         {
             "key": "twitter",
             "name": "Twitter / X",
-            "handle": "None",
-            "href": "None",
+            "handle": "@BaiXuan_Tianyu",
+            "href": "https://x.com/BaiXuan_Tianyu",
             "hoverColor": "hover:border-[#1DA1F2]/40 hover:text-[#1DA1F2]"
         },
         {
