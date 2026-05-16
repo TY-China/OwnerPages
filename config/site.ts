@@ -83,7 +83,7 @@ export const siteConfig: SiteConfig = {
 
   footer: {
     quote: "“单程孤舟，出云入霞，如歌如吟。”",
-    credit: "Made with love by BaiXuan",
+    credit: "Made with love by BaiXuan \n Built by GitHub : https://github.com/TY-China/OwnerPages/",
   },
 
   navLinks: [
