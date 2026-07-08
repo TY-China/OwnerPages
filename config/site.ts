@@ -72,8 +72,8 @@ export const siteConfig: SiteConfig = {
     "tagline": "ACGN / INFJ-T / Depression / Python / CS.ML / NLP",
     "bio": "你好呀！我是白轩（BaiXuan），很高兴你可以进入并浏览我的个人主页。",
     "avatarUrl": "http://q.qlogo.cn/headimg_dl?dst_uin=2182344375&spec=640&img_type=jpg",
-    "heroImageUrl": "/images/hero-photoroom.png",
-    "heroImageAlt": "Photoroom 处理后的主页 Hero 图片",
+    "heroImageUrl": "/images/140981624_p0.webp",
+    "heroImageAlt": "二次元风格的梦幻天空场景插图，Pixiv ID 140981624",
     "ctaLink": {
         "label": "查看我的Blog",
         "href": "None",
